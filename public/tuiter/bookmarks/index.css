@@ -1,0 +1,113 @@
+
+body {
+  background: black;
+  color: white;
+}
+
+h3 {
+  margin: 0;
+}
+
+ul, li, p {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color:  white;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.wd-container {
+  width: 700px;
+  margin: auto;
+  border:  rgb(47, 51, 54) 1px solid;
+}
+
+.wd-author {
+  font-size: 15px;
+  color: lightgray;
+  font-weight: bold;
+}
+
+.wd-handle {
+  font-size: 15px;
+  color: lightgray;
+}
+
+.wd-top {
+  padding: 12px 16px;
+  border-bottom: solid 1px rgb(47, 51, 54);
+}
+
+.wd-bottom {
+  padding: 12px 16px;
+}
+
+.wd-btns {
+  display: flex;
+  margin-top: 10px;
+}
+
+.wd-btns li {
+  margin-right: 65px;
+}
+
+.wd-btns li span {
+  margin-right: 12px;
+}
+
+.wd-handle {
+  font-size: 15px;
+  color: lightgray;
+}
+
+.wd-content {
+  display: flex;
+}
+
+.wd-avatar {
+  border-radius: 100%;
+}
+.wd-content-right {
+  margin-left: 12px;
+}
+
+.wd-content-paragraph {
+  max-width: 506px;
+  margin-top: 6px;
+  font-size: 15px;
+}
+
+.wd-content-post {
+  margin-top: 12px;
+  border: rgb(47, 51, 54) 1px solid;
+  width: 504px;
+  border-radius: 10px;
+}
+
+.wd-content-post img {
+  border-radius: 10px;
+  
+}
+
+.wd-content-post-bottom {
+  margin-top: 12px;
+  padding: 12px;
+  border-top: rgb(47, 51, 54) 1px solid;
+}
+
+.wd-content-post-title {
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+}
+.wd-content-post-content {
+  color: lightgray;
+}
