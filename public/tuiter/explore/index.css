@@ -16,12 +16,95 @@ a {
   white-space: nowrap;
 }
 
-.wd-container {
-  width: 700px;
-  margin: auto;
-  border:  rgb(47, 51, 54) 1px solid;
-  padding-top: 20px;
+.fa.fa-cog {
+  font-size: 20px;
+  margin-left: 6px;
+  color: #1d9bf0;
 }
+
+.wd-row.row {
+  padding-top: 40px;
+  justify-content: center;
+}
+
+
+.wd-container {
+  width: 600px;
+  margin: auto;
+}
+
+.wd-sidebar i {
+  width: 40px;
+}
+
+
+.wd-sidebar .list-group .list-group-item:first-child {
+  color: #1d9bf0;
+}
+
+.wd-sidebar button.tweet {
+  background-color: #1d9bf0;
+  color: white;
+  padding-left: 32px;
+    padding-right: 32px;
+}
+
+.wd-sidebar .list-group-item {
+  border: none;
+  margin-bottom: 9px;
+  font-size: 18px;
+  color: #4b4b4b;
+}
+
+.wd-sidebar .list-group-item.active {
+  font-weight: bold;
+  background-color: transparent;
+  color: black;
+}
+
+.wd-top .nav .nav-link {
+  color: #848484;
+}
+.wd-top .nav .nav-link.active {
+  color: black;
+  font-weight: bold;
+}
+
+.wd-top .nav .nav-link.active + .active-bar {
+  background-color: rgb(29, 155, 240);
+  height: 4px;
+  width: 85%;
+  border-radius: 9999px;
+  margin: auto;
+}
+.wd-tweet-btn.btn {
+  border-radius: 30px;
+}
+
+.wd-follow-item  {
+  display: flex;
+  align-items: center;
+}
+
+.wd-follow-item img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.wd-follow-item .wd-follow-name {
+  flex: 1;
+}
+
+.wd-follow-name > div:first-child {
+  font-weight: 600;
+}
+.wd-follow-name > div:last-child {
+  color: #656565;
+  font-size: 14px;
+}
+
 
 .icon::before {
   display: inline-block;
@@ -30,31 +113,43 @@ a {
 }
 
 .wd-top {
-  border-bottom: 2px solid rgb(47, 51, 54);
+  margin-bottom: 0px;
 }
+
+.wd-top-search {
+  position: relative;
+  margin-bottom: 20px;
+}
+.wd-top-search > i.fa-search {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 
 .wd-top input {
-  margin-left: 16px;
-  width: 80%;
-  padding: 10px;
+  width: 90%;
+  padding: 8px;
+  padding-left: 40px;
   border-radius: 20px;
-  background-color: darkgray;
-  color: white;
+  color: gray;
+  /* border: 1px solid lightgray; */
   border: none;
+  background-color: #f7f7f7;
+  position: relative;
 }
 
-.wd-top input::before {
-  content: '\f002';
-  font-family: 'Font Awesome 6 Free';
-  font-weight: 900;
-  font: var(--fa-font-solid);
-  display: inline-block;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
+
+.wd-center {
+  position: relative;
 }
 
-.wd-top a {
-  margin-left: 16px;
+.wd-center h3 {
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  left: 10px;
 }
 
 
@@ -86,10 +181,15 @@ a {
   height: 6px;
 }
 
+.wd-bottom {
+  border: #b6b6b680 1px solid;
+}
+
+
 .wd-post {
   padding: 8px;
   padding-left: 16px;
-  border-bottom: rgb(47, 51, 54) 1px solid;
+  border-bottom: #b6b6b680 1px solid;
   position: relative;
 }
 
@@ -101,8 +201,17 @@ a {
 
 .wd-post .wd-title {
   cursor: pointer;
+  font-weight: bold;
+  max-width: 98%;
 }
 
+.wd-post .wd-author {
+  font-weight: bold;
+}
+
+.wd-post .wd-time {
+  font-weight: normal;
+}
 .wd-post .wd-subtitle, .wd-tweets, .wd-time {
   color: rgb(110, 118, 125);
   font-size: 13px;
@@ -116,4 +225,26 @@ a {
 
 .wd-post.wd-with-img img {
   border-radius: 10px;
+}
+
+.wd-follow-btn button {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.wd-who-to-follow.list-group li:first-child {
+  padding-top: 12px;
+}
+
+.wd-who-to-follow.list-group li  {
+  border: none;
+  background-color: #f7f7f7;
+}
+
+.wd-who-to-follow.list-group {
+  border-radius: 14px;
+}
+
+.wd-who-to-follow.list-group i {
+  color: #1d9bf0;
 }

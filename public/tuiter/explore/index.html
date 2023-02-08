@@ -6,87 +6,203 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
-  <script src="https://kit.fontawesome.com/1e5da3aa9a.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
   <title>Explore</title>
 </head>
 
-<body>
-  <div class="wd-container">
-    <div class="wd-top">
-      <div>
-        <input type="text" placeholder="Search Tuiter">
-        <a href="explore-settings.html"><i class="fa-solid fa-gear"></i></a>
-      </div>
+<body class="container">
 
-      <ul class="wd-menu">
-        <li class="selected">
-          <a href="#">For you</a>
+  <div class="wd-row row">
+
+    <div class="col-xxl-1"></div>
+    <div class="wd-sidebar col-md-2 col-lg-1 col-xl-2 col-xxl-2">
+      <ul class="list-group">
+        <li class="list-group-item"><i class="fab fa-2x fa-tumblr-square"></i></li>
+        <li class="list-group-item"><i class="fas fa-home"></i>
+          <span class="d-sm-none d-xl-inline-block">Home</span>
         </li>
-        <li><a href="#">Trending</a></li>
-        <li><a href="#">COVID-19</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">Sports</a></li>
-        <li><a href="#">Entertainment</a></li>
+        <li class="list-group-item active"><i class="fas fa-hashtag"></i>
+          <span class="d-sm-none d-xl-inline-block">Explore</span>
+        </li>
+        <li class="list-group-item"><i class="fas fa-bell"></i>
+
+          <span class="d-sm-none d-xl-inline-block">Notifications</span>
+        </li>
+        <li class="list-group-item"><i class="fas fa-envelope">
+
+          </i> <span class="d-sm-none d-xl-inline-block">Messages</span></li>
+        <li class="list-group-item"><i class="fas fa-bookmark">
+
+          </i><span class="d-sm-none d-xl-inline-block">Bookmarks</span></li>
+        <li class="list-group-item"><i class="fas fa-list-alt">
+
+          </i><span class="d-sm-none d-xl-inline-block">Lists</span></li>
+        <li class="list-group-item"><i class="fas fa-user">
+
+          </i><span class="d-sm-none d-xl-inline-block">Profile</span></li>
+        <li class="list-group-item"><i class="fas fa-comment-dots">
+          </i>
+          <span class="d-sm-none d-xl-inline-block">More</span>
+        </li>
+      </ul>
+
+      <button type="button" class="tweet w-100 rounded-pill btn mt-3">Tweet</button>
+    </div>
+
+    <div class="col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+      <div class="wd-container">
+        <div class="wd-top">
+          <div class="wd-top-search">
+            <input type="text" placeholder="Search Tuiter">
+            <i class="fas fa-search"></i>
+            <a href="explore-settings.html"><i class="fa fa-cog"></i></a>
+          </div>
+
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">For you</a>
+              <div class="active-bar"></div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Trending</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Entertainment</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="wd-center">
+          <img src="starship.webp" class="w-100" alt="">
+          <h3>SpaceX's Starship</h3>
+        </div>
+
+        <div class="wd-bottom">
+          <div class="wd-post wd-with-img">
+            <div>
+              <div class="wd-subtitle">Web Development</div>
+              <div class="wd-author">ReactJS <i class="fas fa-check-circle fa-sm"></i><span class="wd-time">
+                  -
+                  2h</span>
+              </div>
+              <div class="wd-title">React is an open-source, components-based JavaScript library for building fast and
+                dynamic user interfaces</div>
+            </div>
+            <img src="react.png" alt="" width="100px" height="100px">
+          </div>
+          <div class="wd-post wd-with-img">
+            <div>
+              <div class="wd-subtitle">Web Development</div>
+              <div class="wd-author">JavaScript <i class="fas fa-check-circle fa-sm"></i><span class="wd-time">
+                  -
+                  2h</span>
+              </div>
+              <div class="wd-title">JavaScript is a programming language that runs on browsers as well as desktops
+              </div>
+              <div class="wd-tweets">123K Tweets</div>
+            </div>
+            <img src="js.png" alt="" width="100px" height="100px">
+          </div>
+
+          <div class="wd-post wd-with-img">
+            <div>
+              <div class="wd-subtitle">Web Development</div>
+              <div class="wd-title">jQuery</div>
+              <div class="wd-tweets">123K Tweets</div>
+            </div>
+            <img src="jquery.webp" alt="" width="100px" height="100px">
+          </div>
+
+          <div class="wd-post wd-with-img">
+            <div>
+              <div class="wd-subtitle">Web Development</div>
+              <div class="wd-title">NodeJS <i class="fas fa-check-circle fa-sm"></i><span class="wd-time">
+                  -
+                  2h</span></div>
+              <div class="wd-tweets">123K Tweets</div>
+            </div>
+            <img src="node.webp" alt="" width="100px" height="100px">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-0 col-lg-3 col-xl-3 col-xxl-3">
+      <ul class="list-group wd-who-to-follow">
+        <li class="list-group-item fw-bold">Who to follow</li>
+        <li class="list-group-item">
+          <div class="wd-follow-item">
+            <img src="java2.png" alt="java">
+            <div class="wd-follow-name">
+              <div>Java <i class="fas fa-check-circle fa-sm"></i></div>
+              <div>@Java</div>
+            </div>
+            <div class="wd-follow-btn">
+              <button type="button" class="rounded-pill btn btn-dark">Follow</button>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="wd-follow-item">
+            <img src="relativity.jpeg" alt="relativity">
+            <div class="wd-follow-name">
+              <div>Relativity Sapce <i class="fas fa-check-circle fa-sm"></i></div>
+              <div>@relativityspace</div>
+            </div>
+            <div class="wd-follow-btn">
+              <button type="button" class="rounded-pill btn btn-dark">Follow</button>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="wd-follow-item">
+            <img src="virgin.svg" alt="relativity">
+            <div class="wd-follow-name">
+              <div>Virgin Galactic <i class="fas fa-check-circle fa-sm"></i></div>
+              <div>@virgingalactic</div>
+            </div>
+            <div class="wd-follow-btn">
+              <button type="button" class="rounded-pill btn btn-dark">Follow</button>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="wd-follow-item">
+            <img src="nasa.png" alt="relativity">
+            <div class="wd-follow-name">
+              <div>NASA <i class="fas fa-check-circle fa-sm"></i></div>
+              <div>@NASA</div>
+            </div>
+            <div class="wd-follow-btn">
+              <button type="button" class="rounded-pill btn btn-dark">Follow</button>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="wd-follow-item">
+            <img src="tesela.png" alt="relativity">
+            <div class="wd-follow-name">
+              <div>Tesela <i class="fas fa-check-circle fa-sm"></i></div>
+              <div>@Tesela</div>
+            </div>
+            <div class="wd-follow-btn">
+              <button type="button" class="rounded-pill btn btn-dark">Follow</button>
+            </div>
+          </div>
+        </li>
       </ul>
     </div>
-
-    <div class="wd-divider"></div>
-    <div class="wd-bottom">
-      <div class="wd-post">
-        <div class="wd-subtitle">Trending in Science</div>
-        <div class="wd-title">Starship</div>
-        <div class="wd-tweets">55.5k Tweets</div>
-
-        <div class="wd-setting">
-          <i class="fa-solid fa-ellipsis"></i>
-        </div>
-      </div>
-      <div class="wd-post">
-        <div class="wd-subtitle">Sports Trending</div>
-        <div class="wd-title">Joe Rogan</div>
-        <div class="wd-tweets">5218 Tweets</div>
-
-        <div class="wd-setting">
-          <i class="fa-solid fa-ellipsis"></i>
-        </div>
-      </div>
-      <div class="wd-post wd-with-img">
-        <div>
-          <div class="wd-author">The New York Times <i class="fa-xs fa-solid fa-circle-check"></i><span class="wd-time">
-              ·
-              Yesterday</span>
-          </div>
-          <div class="wd-title">CNN's Cuomo conundrum: A star anchor with a brother in trouble</div>
-        </div>
-        <img src="c.jpeg" alt="" width="100px" height="100px">
-      </div>
-      <div class="wd-post wd-with-img">
-        <div>
-          <div class="wd-subtitle">COVID-19 LIVE</div>
-          <div class="wd-title">Covid-19: News and Updates</div>
-        </div>
-        <img src="d.jpeg" alt="" width="100px" height="100px">
-      </div>
-      <div class="wd-post wd-with-img">
-        <div>
-          <div class="wd-author">Bloomberg Opinion <i class="fa-xs fa-solid fa-circle-check"></i><span class="wd-time">
-              ·
-              Yesterday</span>
-          </div>
-          <div class="wd-title">Thinking about getting a bosster? Read this first</div>
-        </div>
-        <img src="e.webp" alt="" width="100px" height="100px">
-      </div>
-
-      <div class="wd-post wd-with-img">
-        <div>
-          <div class="wd-subtitle">Game LIVE</div>
-          <div class="wd-title">Splatoon 3 Tips, Tricks, And Hints - Nintendo Life </div>
-        </div>
-        <img src="s.png" alt="" width="100px" height="100px">
-      </div>
-    </div>
   </div>
+
 </body>
 
 </html>
