@@ -1,12 +1,12 @@
-const NavigationSidebar = () => {
+const NavigationSidebar = (active) => {
   return(`
   <ul class="list-group">
     <li class="list-group-item"><i class="fab fa-2x fa-tumblr-square"></i></li>
-    <li class="list-group-item"><i class="fas fa-home"></i>
-      <span class="d-sm-none d-xl-inline-block">Home</span>
+    <li class="list-group-item ${active == 'home' ? 'active' : '' }"><i class="fas fa-home"></i>
+      <span class="d-sm-none d-xl-inline-block"><a href='/tuiter/home/index.html'>Home</a></span>
     </li>
-    <li class="list-group-item active"><i class="fas fa-hashtag"></i>
-      <span class="d-sm-none d-xl-inline-block">Explore</span>
+    <li class="list-group-item ${active == 'explore' ? 'active' : '' }"><i class="fas fa-hashtag"></i>
+      <span class="d-sm-none d-xl-inline-block"><a href='/tuiter/explore/index.html'>Explore</a></span>
     </li>
     <li class="list-group-item"><i class="fas fa-bell"></i>
 

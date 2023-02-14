@@ -18,7 +18,7 @@ function PostSummaryItem(post) {
       : ''
     }
   </div>
-  <img src="./images/${post.image}" alt="" width="100px" height="100px">
+  <img src="/images/${post.image}" alt="" width="100px" height="100px">
 </div>
   `
 }

@@ -249,3 +249,83 @@ a {
 .wd-who-to-follow.list-group i {
   color: #1d9bf0;
 }
+
+.wd-post-author {
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+.wd-handle {
+  font-size: 13px;
+  color: lightgray;
+  font-weight: normal;
+}
+
+/* .wd-top {
+  padding: 12px 16px;
+  border-bottom: solid 1px rgb(47, 51, 54);
+} */
+
+/* .wd-bottom {
+  padding: 12px 16px;
+} */
+
+.wd-btns {
+  display: flex;
+  margin-top: 10px;
+}
+
+.wd-btns li {
+  list-style: none;
+  margin-right: 65px;
+}
+
+.wd-btns li span {
+  margin-right: 12px;
+}
+
+
+.wd-content {
+  display: flex;
+}
+
+.wd-avatar {
+  border-radius: 100%;
+}
+.wd-content-right {
+  margin-left: 12px;
+}
+
+.wd-content-paragraph {
+  max-width: 506px;
+  margin-top: 6px;
+  font-size: 15px;
+  color: #dddddd;
+}
+
+.wd-content-post {
+  margin-top: 12px;
+  border: rgb(47, 51, 54) 1px solid;
+  width: 480px;
+  border-radius: 10px;
+}
+
+.wd-content-post img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.wd-content-post-bottom {
+  padding: 12px;
+  border-top: rgb(47, 51, 54) 1px solid;
+}
+
+.wd-content-post-title {
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+}
+.wd-content-post-content {
+  color: lightgray;
+}
