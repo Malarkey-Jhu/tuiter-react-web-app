@@ -33,7 +33,7 @@ const ExploreComponent = () => {
           </div>
 
            <div class="wd-center">
-           <img src="./images/starship.webp" class="w-100" alt="">
+           <img src="/images/starship.webp" class="w-100" alt="">
            <h3>SpaceX's Starship</h3>
            </div>
 
