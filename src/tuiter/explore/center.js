@@ -7,25 +7,25 @@ const Center = () => {
             <div className="wd-top-search">
               <input type="text" placeholder="Search Tuiter" />
               <i className="fas fa-search"></i>
-              <a href="explore-settings.html"><i className="fa fa-cog"></i></a>
+              <span><i className="fa fa-cog"></i></span>
             </div>
 
             <ul className="nav">
               <li className="nav-item">
-                <a className="nav-link active" href="#">For you</a>
+                <span className="nav-link active">For you</span>
                 <div className="active-bar"></div>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Trending</a>
+                <span className="nav-link" >Trending</span>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">News</a>
+                <span className="nav-link" >News</span>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Sports</a>
+                <span className="nav-link" >Sports</span>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Entertainment</a>
+                <span className="nav-link" >Entertainment</span>
               </li>
             </ul>
 

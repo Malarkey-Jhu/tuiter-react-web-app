@@ -8,7 +8,7 @@ function WhoToFollowListItem({who = {
 
   return (
   <div className="wd-follow-item">
-    <img src={`/images/${who.avatarIcon}`} alt="${who.userName}" />
+    <img src={`/images/${who.avatarIcon}`} alt={`${who.userName}`} />
     <div className="wd-follow-name">
       <div>{who.userName} <i className="fas fa-check-circle fa-sm"></i></div>
       <div>@{who.handle}</div>

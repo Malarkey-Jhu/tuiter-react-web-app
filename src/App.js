@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import HelloWorld from "./labs/a6/hello-world";
 import Tuiter from "./tuiter";
 import {BrowserRouter} from "react-router-dom";
