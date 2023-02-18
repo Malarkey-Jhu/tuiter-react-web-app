@@ -14,7 +14,7 @@ const NavigationSidebar = () => {
       <li className="list-group-item"><i className="fab fa-2x fa-tumblr-square"></i></li>
       <li className={
         cx("list-group-item", {
-          "active": active == 'home'
+          "active": active === 'home'
           })
       }><i className="fas fa-home"></i>
         <Link to={'/tuiter/home'}>
@@ -25,10 +25,10 @@ const NavigationSidebar = () => {
       </li>
       <li className={
         cx("list-group-item", {
-          "active": active == 'explore'
+          "active": active === 'explore'
           })
         }><i className="fas fa-hashtag"></i>
-        <Link to={'/tuiter/explore'}>
+        <Link to="/tuiter/explore">
         <span className="d-sm-none d-xl-inline-block">
           Explore
         </span>
