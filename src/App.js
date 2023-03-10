@@ -6,6 +6,8 @@ import {Routes, Route} from "react-router";
 import Labs from './labs'
 import './App.css';
 
+const MyComp = () => false;
+
 function App() {
   return (
     <BrowserRouter>
@@ -19,6 +21,7 @@ function App() {
                  element={<Tuiter/>}/>
         </Routes>
     </div>
+    <MyComp />
     </BrowserRouter>
   );
 }
