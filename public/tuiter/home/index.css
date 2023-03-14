@@ -298,7 +298,7 @@ a {
 }
 
 .wd-content-paragraph {
-  max-width: 506px;
+  /* max-width: 506px; */
   margin-top: 6px;
   font-size: 15px;
   color: #dddddd;

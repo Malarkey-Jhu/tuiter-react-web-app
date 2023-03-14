@@ -29,6 +29,7 @@ a {
 
 .wd-container {
   margin: auto;
+  padding: 0px 40px;
 }
 
 .wd-sidebar i {
@@ -277,7 +278,7 @@ a {
 
 .wd-btns li {
   list-style: none;
-  margin-right: 65px;
+  min-width: 126px;
 }
 
 .wd-btns li span {
@@ -293,11 +294,20 @@ a {
   border-radius: 100%;
 }
 .wd-content-right {
-  margin-left: 12px;
+  margin-left: 24px;
+  flex: 1;
+  position: relative;
+}
+
+.wd-content-delete-icon {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
 }
 
 .wd-content-paragraph {
-  max-width: 506px;
+  /* max-width: 506px; */
   margin-top: 6px;
   font-size: 15px;
   color: #dddddd;

@@ -1,0 +1,52 @@
+.profile-top {
+  position: relative;
+}
+
+.profile-banner {
+  height: 220px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.profile-avatar {
+  position: absolute;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  left: 20px;
+  bottom: -40px;
+}
+
+.profile-edit-btn {
+  margin-top: 20px;
+  font-size: 14px;
+  border-radius: 20px;
+  float: right;
+}
+
+.profile-content {
+  margin-top: 60px;
+}
+
+.profile-content h4 {
+  margin-bottom: 0;
+}
+
+.profile-content p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.profile-attr {
+  margin: 20px 0px;
+}
+
+.profile-edit-form-control {
+  background-color: rgb(55,55,55) !important;
+  color: white !important;
+}
+
+.profile-attr span:not(:last-child) {
+  margin-right: 30px;
+}
+

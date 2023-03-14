@@ -1,18 +1,14 @@
 import React from 'react';
-import TuitsList from '../tuits/TuitsList';
-// import PostList from './post-list'
-import PostSummaryList from '../post-summary-list';
 import WhoToFollowList from '../who-to-follow-list';
-import WhatsHappening from './whats-happening';
-import './index.css'
-function HomeComponent() {
+import Profile from './profile';
+import EditProfile from './edit-profile';
 
+function ProfileComp({ isEdit = false }) {
   return (
     <div className="row wd-row">
     <div className="col-10 col-lg-8 col-xl-8">
       <div className="wd-container">
-      <WhatsHappening />
-      <TuitsList />
+      { isEdit ? <EditProfile /> :  <Profile /> }
       </div>
     </div>
 
@@ -23,4 +19,4 @@ function HomeComponent() {
   )
 }
 
-export default HomeComponent;
+export default ProfileComp;

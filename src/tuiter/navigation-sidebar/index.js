@@ -53,9 +53,11 @@ const NavigationSidebar = () => {
       <li className="list-group-item"><i className="fas fa-list-alt">
   
         </i><span className="d-sm-none d-xl-inline-block">Lists</span></li>
-      <li className="list-group-item"><i className="fas fa-user">
-  
-        </i><span className="d-sm-none d-xl-inline-block">Profile</span></li>
+      <li className={cx("list-group-item", {
+        "active": active.includes('profile')
+      })}><i className="fas fa-user"></i>
+        <Link to='/tuiter/profile'><span className="d-sm-none d-xl-inline-block">Profile</span></Link>
+      </li>
       <li className="list-group-item"><i className="fas fa-comment-dots">
         </i>
         <span className="d-sm-none d-xl-inline-block">More</span>

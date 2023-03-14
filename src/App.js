@@ -6,7 +6,6 @@ import {Routes, Route} from "react-router";
 import Labs from './labs'
 import './App.css';
 
-const MyComp = () => false;
 
 function App() {
   return (
@@ -14,6 +13,7 @@ function App() {
     <div className='container'>
     <Routes>
           <Route index
+              path="/*"
                  element={<Labs/>}/>
           <Route path="/hello"
                  element={<HelloWorld/>}/>
@@ -21,7 +21,6 @@ function App() {
                  element={<Tuiter/>}/>
         </Routes>
     </div>
-    <MyComp />
     </BrowserRouter>
   );
 }

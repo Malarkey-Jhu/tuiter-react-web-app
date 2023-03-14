@@ -248,3 +248,13 @@ a {
 .wd-who-to-follow.list-group i {
   color: #1d9bf0;
 }
+
+
+.wd-btns li {
+  cursor: pointer;
+  
+}
+
+.red {
+  color: red;
+}
