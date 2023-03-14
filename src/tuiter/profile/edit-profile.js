@@ -38,8 +38,8 @@ const EditProfile = () => {
     <div>
       
       <div className="profile-top">
-      <img className="profile-banner" src={`/images/${profile.bannerPicture}`} />
-      <img className="profile-avatar" src={`/images/${profile.profilePicture}`} />
+      <img className="profile-banner" src={`/images/${profile.bannerPicture}`} alt="banner"/>
+      <img className="profile-avatar" src={`/images/${profile.profilePicture}`} alt="avatar" />
       </div>
 
       <button onClick={onSaveClick} type="button" className="btn btn-primary profile-edit-btn">Save Profile</button>

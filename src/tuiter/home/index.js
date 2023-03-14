@@ -1,7 +1,5 @@
 import React from 'react';
 import TuitsList from '../tuits/TuitsList';
-// import PostList from './post-list'
-import PostSummaryList from '../post-summary-list';
 import WhoToFollowList from '../who-to-follow-list';
 import WhatsHappening from './whats-happening';
 import './index.css'
