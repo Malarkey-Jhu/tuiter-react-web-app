@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
-import tuits from '../data/tuits.json';
+// import tuits from '../data/tuits.json';
+import {findTuitsThunk, deleteTuitThunk, createTuitThunk, updateTuitThunk} from "../../services/tuits-thunks";
 
 const currentUser = {
   "userName": "NASA",
@@ -17,37 +18,66 @@ const currentUser = {
   "likes": 0,
  }
  
+const initialState = {
+  tuits: [],
+  loading: false,
+  error: null
+}
 
 const tuitsSlice = createSlice({
  name: 'tuits',
- initialState: tuits,
+ initialState,
  reducers: {
-  toggleLike(state, action) {
-    const tuit = state.find((item) =>
-    item._id === action.payload)
-    if (tuit.liked) {
-      tuit.liked = false
-      tuit.likes-=1
-    } else {
-      tuit.liked = true
-      tuit.likes+=1
-    }
-  },
-  createTuit(state, action) {
-    state.unshift({
-      ...action.payload,
-      ...templateTuit,
-      _id: (new Date()).getTime(),
-    })
-  },
-  deleteTuit(state, action) {
-    const idx = state.findIndex(item => item._id === action.payload)
-    if (idx !== -1) {
-      state.splice(idx, 1)
-    }
-    
+    toggleLike(state, action) {
+      const tuit = state.tuits.find((item) =>
+      item._id === action.payload)
+      if (tuit.liked) {
+        tuit.liked = false
+        tuit.likes-=1
+      } else {
+        tuit.liked = true
+        tuit.likes+=1
+   }
   }
-}
+ },
+ extraReducers: {
+  [deleteTuitThunk.fulfilled] :
+      (state, { payload }) => {
+      state.loading = false
+      state.tuits = state.tuits
+        .filter(t => t._id !== payload)
+  },
+  [findTuitsThunk.pending]:
+     (state) => {
+        state.loading = true
+        state.tuits = []
+  },
+  [findTuitsThunk.fulfilled]:
+     (state, { payload }) => {
+        state.loading = false
+        state.tuits = payload
+  },
+  [findTuitsThunk.rejected]:
+     (state, action) => {
+        state.loading = false
+        state.error = action.error
+  },
+  [createTuitThunk.fulfilled]:
+      (state, { payload }) => {
+        state.loading = false
+        state.tuits.push(payload)
+    },
+  [updateTuitThunk.fulfilled]:
+  (state, { payload }) => {
+    state.loading = false
+    const tuitNdx = state.tuits
+      .findIndex((t) => t._id === payload._id)
+    state.tuits[tuitNdx] = {
+      ...state.tuits[tuitNdx],
+      ...payload
+    }
+  }
+},
 });
 
 export const { toggleLike, createTuit, deleteTuit } = tuitsSlice.actions

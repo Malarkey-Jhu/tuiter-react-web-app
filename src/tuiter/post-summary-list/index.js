@@ -4,10 +4,10 @@ import PostSummaryItem from './post-summary-item';
 import {useSelector} from "react-redux";
 
 function PostSummaryList() {
-  const postsArray = useSelector(state => state.tuits)
+  const { tuits, loading } = useSelector(state => state.tuitsData)
   return (
     <>
-      {postsArray.map(post => <PostSummaryItem key={post.time} post={post}/>)}
+      {tuits.map(post => <PostSummaryItem key={post.time} post={post}/>)}
     </>
   )
 }

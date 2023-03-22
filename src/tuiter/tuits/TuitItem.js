@@ -1,14 +1,13 @@
 import React from "react";
 import TuitStats from "./TuitStats";
-import { deleteTuit } from '../reducers/tuits-reducer'
 import { useDispatch } from "react-redux";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 
 function PostItem({post}) {
   
-  
   const dispatch = useDispatch();
   const deleteTuitHandler = () => {
-    dispatch(deleteTuit(post._id))
+    dispatch(deleteTuitThunk(post._id))
   }
 
   return (
@@ -21,7 +20,7 @@ function PostItem({post}) {
       <p className="wd-content-paragraph">{post.tuit}</p>
     </div>
     <ul className="wd-btns">
-      <TuitStats _id={post._id} replies={post.replies} retuits={post.retuits} likes={post.likes} liked={post.liked}  />
+      <TuitStats tuit={post}  />
     </ul>
   </div>
   </div>

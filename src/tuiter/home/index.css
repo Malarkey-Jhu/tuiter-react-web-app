@@ -297,6 +297,7 @@ a {
   margin-left: 24px;
   flex: 1;
   position: relative;
+  max-width: 553px;
 }
 
 .wd-content-delete-icon {
