@@ -13,7 +13,7 @@ function App() {
     <div className='container'>
     <Routes>
           <Route index
-              path="/*"
+              path="/"
                  element={<Labs/>}/>
           <Route path="/hello"
                  element={<HelloWorld/>}/>
