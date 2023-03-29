@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { updateTuitThunk, findTuitsThunk } from "../../services/tuits-thunks";
+import { updateTuitThunk } from "../../services/tuits-thunks";
 import cx from 'classnames'
 
 const TuitStats = ({ tuit }) => {
